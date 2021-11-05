@@ -17,7 +17,7 @@ target_link_libraries(aruco_print_marker        aruco opencv_calib3d ${THREADLIB
 target_link_libraries(aruco_simple              aruco opencv_calib3d ${THREADLIB})
 target_link_libraries(aruco_test                aruco opencv_calib3d ${THREADLIB})
 target_link_libraries(aruco_tracker             aruco opencv_calib3d ${THREADLIB})
-target_link_libraries(aruco_batch_processing    aruco opencv_calib3d ${THREADLIB})
+target_link_libraries(aruco_batch_processing    aruco opencv_calib3d opencv_highgui ${THREADLIB})
 
 #aruco_create_board
 INSTALL(TARGETS aruco_batch_processing aruco_tracker aruco_simple aruco_test aruco_print_marker aruco_print_dictionary       RUNTIME DESTINATION bin)
